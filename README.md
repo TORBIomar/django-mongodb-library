@@ -16,7 +16,7 @@
 1. **Clone and navigate to the project**
 
 ```bash
-cd mongo_library
+cd Django-Mongodb-Library
 ```
 
 2. **Create and activate a virtual environment**
@@ -116,13 +116,15 @@ Open **[http://127.0.0.1:8000/](http://127.0.0.1:8000/)** in your browser.
 ## 📁 Project Structure
 
 ```
-mongo_library/
+Django-Mongodb-Library/
 ├── manage.py
 ├── import_books.py
 ├── db.py
 ├── README.md
+├── .gitignore
 │
 ├── core/
+│   ├── asgi.py
 │   ├── settings.py
 │   ├── urls.py
 │   └── wsgi.py
@@ -139,6 +141,8 @@ mongo_library/
 └── scripts/
     └── inspect_doc.py
 ```
+
+Local/generated files such as `venv/`, `__pycache__/`, `db.sqlite3`, and `.env` are intentionally excluded from Git.
 
 ---
 
@@ -234,5 +238,3 @@ This project is provided as-is for educational and personal use.
 ---
 
 **Happy reading!** 📚
-
-*Edited: Windows activation instructions simplified to use `venv\\Scripts\\activate` (no `.ps1`).*
